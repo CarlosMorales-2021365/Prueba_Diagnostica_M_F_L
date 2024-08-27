@@ -1,6 +1,4 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package org.luislopez.model;
 
@@ -8,7 +6,7 @@ package org.luislopez.model;
  *
  * @author informatica
  */
-public class Computadora {
+public class Computadora extends Dispositivo{
     private String sistemaoperativo;
     
     public Computadora(){
@@ -27,6 +25,13 @@ public class Computadora {
         this.sistemaoperativo = sistemaoperativo;
     }
     
-    
+    @Override
+    public void encender() {
+        System.out.println("Computadora encendida");
+    }
+
+    public void encender(String clave) {
+        System.out.println("Computadora encendida con clave");
+    }
     
 }

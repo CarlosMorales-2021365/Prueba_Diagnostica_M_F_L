@@ -5,7 +5,7 @@ package org.luislopez.model;
  *
  * @author informatica
  */
-public class Telefono {
+public class Telefono extends Dispositivo{
     private String tipo;
     
     
@@ -25,7 +25,14 @@ public class Telefono {
         this.tipo = tipo;
     }
     
-    
-    
+    @Override
+    public void encender() {
+        System.out.println("Telefono encendido");
+    }
+
+    public void encender(String codigo) {
+        System.out.println("Telefono encendido con código");
+    }
+
     
 }

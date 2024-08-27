@@ -8,7 +8,7 @@ package org.luislopez.model;
  *
  * @author informatica
  */
-public class Televisor {
+public class Televisor extends Dispositivo{
     
     private String tamanopantalla;
     
@@ -28,5 +28,12 @@ public class Televisor {
         this.tamanopantalla = tamanopantalla;
     }
     
-    
+    @Override
+    public void encender() {
+        System.out.println("Televisor encendido");
+    }
+
+    public void encender(int volumen) {
+        System.out.println("Televisor encendido con volumen");
+    }    
 }
