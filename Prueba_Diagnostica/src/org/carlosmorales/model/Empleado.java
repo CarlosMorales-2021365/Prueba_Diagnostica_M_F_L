@@ -9,15 +9,15 @@ package org.carlosmorales.model;
  * @author Usuario
  */
 abstract class Empleado {
-    String nombre;
-    String edad;
-    double salario;
+    private String nombre = "Carlos";
+    private int edad = 18;
+    private double salario = 30000.;
 
 
     public Empleado() {
     }
 
-    public Empleado(String nombre, String edad, double salario) {
+    public Empleado(String nombre, int edad, double salario) {
         this.nombre = nombre;
         this.edad = edad;
         this.salario = salario;
@@ -31,13 +31,15 @@ abstract class Empleado {
         this.nombre = nombre;
     }
 
-    public String getEdad() {
+    public int getEdad() {
         return edad;
     }
 
-    public void setEdad(String edad) {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
+
+
 
     public double getSalario() {
         return salario;
@@ -46,12 +48,8 @@ abstract class Empleado {
     public void setSalario(double salario) {
         this.salario = salario;
     }
-
-
-     
     
     abstract void trabajar();
-    
     
     
     public void trabajar(int horas){

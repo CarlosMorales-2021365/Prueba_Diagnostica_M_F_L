@@ -9,7 +9,7 @@ package org.carlosmorales.model;
  * @author Usuario
  */
 public class Desarrollador extends Empleado {
-    String lenguajeProgramacion;
+    private String lenguajeProgramacion;
 
     public Desarrollador() {
     }
@@ -28,13 +28,14 @@ public class Desarrollador extends Empleado {
     }
 
     @Override
-    void trabajar() {
-        System.out.println(nombre+"esta usando"+ lenguajeProgramacion+"para su proyecto");
+    public String toString() {
+        return "lenguaje de programacion " + lenguajeProgramacion+ 
+                "\n" + super.toString();
     }
 
-    
-    public void trabajar(String proyecto){
-        System.out.println(nombre+"esta usando"+ lenguajeProgramacion+"para el proyecto"+proyecto);
+    @Override
+    void trabajar() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
             
