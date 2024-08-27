@@ -5,25 +5,26 @@ package org.fredygarcia.models;
  * @author alexa
  */
 public class Forma {
-    int Color;
+    int color;
 
     public Forma() {
     }
 
-    public Forma(int Color) {
-        this.Color = Color;
+    public Forma(int color) {
+        this.color = color;
     }
 
     public int getColor() {
-        return Color;
+        return color;
     }
 
-    public void setColor(int Color) {
-        this.Color = Color;
+    public void setColor(int color) {
+        this.color = color;
     }
 
     @Override
     public String toString() {
-        return "Forma{" + "Color=" + Color + '}';
+        return "Forma{" + "color=" + color + '}';
     }
 }
+
