@@ -10,12 +10,17 @@ public class Circulo extends Forma {
     public Circulo() {
         super();
     }
-    
+
     public Circulo(double radio) {
         super();
         this.radio = radio;
     }
 
+    public Circulo(double radio, int color) {
+        super(color);
+        this.radio = radio;
+    }
+    
     public double getRadio() {
         return radio;
     }

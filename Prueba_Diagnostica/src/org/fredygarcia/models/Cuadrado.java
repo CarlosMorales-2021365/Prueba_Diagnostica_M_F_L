@@ -16,6 +16,11 @@ public class Cuadrado extends Forma{
         this.lado = lado;
     }
 
+    public Cuadrado(double lado, int color) {
+        super(color);
+        this.lado = lado;
+    }  
+
     public double getLado() {
         return lado;
     }

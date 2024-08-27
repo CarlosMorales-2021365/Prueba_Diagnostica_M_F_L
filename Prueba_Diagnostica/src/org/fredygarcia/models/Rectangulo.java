@@ -18,6 +18,12 @@ public class Rectangulo extends Forma{
         this.altura = altura;
     }
 
+    public Rectangulo(double base, double altura, int color) {
+        super(color);
+        this.base = base;
+        this.altura = altura;
+    }
+
     public double getBase() {
         return base;
     }
