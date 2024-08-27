@@ -4,7 +4,7 @@ package org.fredygarcia.models;
  *
  * @author alexa
  */
-public class Cuadrado {
+public class Cuadrado extends Forma{
     double lado;
 
     public Cuadrado() {
